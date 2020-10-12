@@ -134,7 +134,7 @@ public class Categorias implements Serializable {
         this.serviciosCollection = serviciosCollection;
     }
 
-    @JsonBackReference
+    @JsonBackReference (producto-list)
     @XmlTransient
     public Collection<Productos> getProductosCollection() {
         return productosCollection;
